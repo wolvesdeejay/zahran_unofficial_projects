@@ -1,0 +1,49 @@
+
+/* Flexbox-based layout */
+        html {
+			height:100%;
+		}
+		/* Flexbox-based layout for the body */
+		body {
+			display: flex; /* Flexbox layout */
+			flex-direction: column; /* Stack vertically */
+			min-height: 100vh; /* Ensure full height of the viewport */
+			margin: 0; /* Remove default margins */
+			padding: 0; /* Remove default padding */
+		}
+
+        /* Main content expands to fill the available space */
+		main {
+			flex: 1; /* Allows the main content to grow and push the footer down */
+			padding: 20px; /* Adds padding for aesthetics */
+			overflow-y: auto; /* Allows vertical scrolling */
+		}
+		/* Icon styling with hover effects */
+		.icon-blue {
+			color: #007bff; /* Standard blue color */
+			font-size: 1.5em; /* Larger font size for emphasis */
+		}
+
+		/* Hover effect for the icon */
+		.icon-blue:hover {
+			color: #0056b3; /* Darker blue on hover */
+			transform: scale(1.1); /* Slight scaling effect */
+			transition: all 0.3s ease-in-out; /* Smooth transition */
+		}
+		.registration-form {
+            max-width: 400px; /* Maximum width of the form */
+            border: 1px solid #ccc; /* Border styling */
+            border-radius: 5px; /* Rounded corners */
+            padding: 20px; /* Padding */
+        }
+
+		//* Footer at the bottom of the page */
+		footer {
+			background-color: #343a40; /* Dark background */
+			color: white; /* White text for contrast */
+			text-align: center; /* Centered text */
+			padding: 20px; /* Padding for space */
+			width: 100%; /* Full width */
+			margin-top: auto; /* Ensures the footer stays at the bottom */
+		}
+				
